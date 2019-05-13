@@ -11,6 +11,12 @@
     width: 50%;
 }
 
+.aol-border {
+    border: 2px solid black;
+    border-bottom-color: rgb(249, 248, 244);
+    border-right-color: rgb(249, 248, 244);
+}
+
 header {
     display: flex;
     justify-content: flex-end;
@@ -59,9 +65,6 @@ section {
 #messages {
     padding: 0.25em;
     background: white;
-    border: 2px solid black;
-    border-bottom-color: rgb(249, 248, 244);
-    border-right-color: rgb(249, 248, 244);
     min-height: 6em;
     margin: 0 0 1em 0;
 }
@@ -87,9 +90,6 @@ ul > li {
 
 textarea {
     width: 100%;
-    border: 2px solid black;
-    border-bottom-color: rgb(249, 248, 244);
-    border-right-color: rgb(249, 248, 244);
 }
 
 .message-actions {
