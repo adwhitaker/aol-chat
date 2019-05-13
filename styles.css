@@ -1,0 +1,103 @@
+:root {
+    box-sizing: border-box;
+    --chat-color: rgb(236, 233, 216);
+    --grey: rgb(195, 192, 182);
+    --blue: rgb(0, 84, 232);
+    --red: rgb(226, 66, 41);
+}
+
+#chat {
+    background: var(--chat-color);
+    width: 50%;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--blue);
+    padding: 0.25em;
+    border-radius: 0.25em 0.25em 0 0;
+}
+
+header > span {
+    margin-left: 0.5em;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0.25em;
+    width: 1em;
+    text-align: center;
+}
+
+header > span:last-of-type {
+    background-color: var(--red);
+}
+
+nav {
+    border-bottom: 1px solid var(--grey);
+    padding: 0.25em;
+    margin: 0.05em 0.05em 0.5em 0.05em;
+    font-size: 0.75em;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 1em;
+}
+
+nav ul li:first-of-type {
+    margin-left: 0;
+}
+section {
+    padding: 0 1em 0 1em;
+}
+
+#messages {
+    padding: 0.25em;
+    background: white;
+    border: 2px solid black;
+    border-bottom-color: rgb(249, 248, 244);
+    border-right-color: rgb(249, 248, 244);
+    min-height: 6em;
+    margin: 0 0 1em 0;
+}
+
+ul > li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.message {
+
+}
+
+.message__author {
+    color: red;
+}
+
+.message--user-message .message__author {
+    color: blue;
+}
+
+textarea {
+    width: 100%;
+    border: 2px solid black;
+    border-bottom-color: rgb(249, 248, 244);
+    border-right-color: rgb(249, 248, 244);
+}
+
+.message-actions {
+    display: flex;
+    padding-bottom: 1em;
+}
+
+.message-actions__send {
+    background: var(--chat-color);
+    border: 1px solid var(--grey)
+}
